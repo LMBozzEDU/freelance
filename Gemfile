@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.6'
+ruby '2.6.6p146'
 
 gem 'rails', '=6.1.3.1'
 
@@ -17,7 +17,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'bulma-rails', '~> 0.7.4'
 gem 'bulma-extensions-rails', '~> 1.0.30'
-gem 'devise', '=4.6.1'
+gem 'devise', '=4.7.3'
 
 gem 'omniauth', '= 1.9.0'
 gem 'omniauth-facebook', '= 5.0.0'
