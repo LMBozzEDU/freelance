@@ -1,0 +1,14 @@
+[
+    {
+        "officialName": "ithinkrepremyiskindahot",
+        "devs": [
+            "Repremy",
+            "LMBozz",
+            "xJos_hy"
+        ],
+        "ports": {
+            "main": "3000",
+            "backend": "3001"
+        }
+    }
+]
