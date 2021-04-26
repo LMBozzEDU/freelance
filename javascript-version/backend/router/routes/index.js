@@ -1,5 +1,3 @@
-const { config } = require("dotenv/types");
-
 module.exports = {
     path: "/",
     method: "get",
