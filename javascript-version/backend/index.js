@@ -12,6 +12,26 @@ global.cookie_parser = require('cookie-parser');
 global.cors = require("cors");
 global.events = require('events');
 global.path = require("path");
+global.mysql = require("mysql2");
+global.mysqlp = require("mysql2/promise");
+
+const maxPools = 3;
+
+function returnConnection(db, poolOverride) {
+        return mysqlp.createPool({
+            host: config.DatabaseDetails.Host,
+            port: config.DatabaseDetails.Port,
+            user: config.DatabaseDetails.Username,
+            password: config.DatabaseDetails.Password,
+            database: db,
+            connectionLimit: poolOverride || maxPools,
+            ssl: {
+                ca: fs.readFileSync(config.DatabaseDetails.Certificate)
+            }
+        })
+}
+
+global.database = returnConnection("bloxgraphics");
 
 //Setup Main Directories
 const api = express();

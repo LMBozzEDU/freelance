@@ -13,7 +13,7 @@ module.exports = {
         res.json({
             success: true,
             version: 1,
-            developers: devs,
+            owners: devs,
         })
     }
 };

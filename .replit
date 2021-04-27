@@ -1,0 +1,2 @@
+language = "nodejs"
+run = "cd ./javascript-version/frontend; node index.js; cd /home/freelancer/javascript-version/backend; node index.js"

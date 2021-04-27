@@ -11,7 +11,7 @@ global.ws = require("ws");
 global.fs = require("fs");
 
 const main = express();
-main.set('views', './views');
+main.set('views', path.join(__dirname, 'views'));
 main.set("view engine", "ejs"); //Main Service
 
 main.listen(config.ports.main);
